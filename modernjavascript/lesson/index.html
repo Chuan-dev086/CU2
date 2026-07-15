@@ -1,12 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>JS LESSON</h1>
-</body>
-<script src="destructure-spread.js"></script>
+    <button id="myButton">Click Me !!</button>
+  </body>
+  <script type="module" src="import-export-callback/callback.js"></script>
+  <script>
+    const button = document.getElementById("myButton");
+
+    button.addEventListener("click", function handleClick() {
+      console.log("Button was clicked!");
+    });
+  </script>
 </html>
